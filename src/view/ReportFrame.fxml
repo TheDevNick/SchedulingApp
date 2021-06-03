@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="4000.0" prefWidth="4000.0" AnchorPane.bottomAnchor="0.0"
+            AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"
+            xmlns="http://javafx.com/javafx/11.0.1" fx:controller="controller.list.ListReport">
+    <bottom>
+        <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <buttons>
+                <Button fx:id="btnTypeAndMonth" mnemonicParsing="false" onAction="#runReport" text="%report.typeandmonth"/>
+                <Button fx:id="btnSchedule" mnemonicParsing="false" onAction="#runReport" text="%report.schedule"/>
+                <Button fx:id="btnDivision" mnemonicParsing="false" onAction="#runReport" text="%report.division"/>
+            </buttons>
+            <padding>
+                <Insets right="10.0"/>
+            </padding>
+        </ButtonBar>
+    </bottom>
+    <center>
+        <TextArea fx:id="textArea" editable="false"/>
+    </center>
+</BorderPane>

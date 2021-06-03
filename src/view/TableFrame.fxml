@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="200.0" prefWidth="200.0"
+            xmlns="http://javafx.com/javafx/11.0.1">
+    <center>
+        <TableView fx:id="tblView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <columns>
+            </columns>
+        </TableView>
+    </center>
+    <bottom>
+        <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <buttons>
+                <Button fx:id="btnFilter" mnemonicParsing="false" onAction="#addFilter" text="%button.filter"
+                        ButtonBar.buttonData="LEFT"/>
+                <Button mnemonicParsing="false" onAction="#addRow" text="%button.add"/>
+                <Button mnemonicParsing="false" onAction="#viewRow" text="%button.view"/>
+                <Button mnemonicParsing="false" onAction="#editRow" text="%button.edit"/>
+                <Button fx:id="btnDelete" mnemonicParsing="false" onAction="#deleteRow" text="%button.delete"/>
+            </buttons>
+            <padding>
+                <Insets right="10.0" left="10.0"/>
+            </padding>
+        </ButtonBar>
+    </bottom>
+</BorderPane>
