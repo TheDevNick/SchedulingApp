@@ -1,7 +1,7 @@
 # C195
 
 ## Title
-Planning App
+Scheduling App made with Java/JavaFx/MySQL
 
 ## Purpose of application
 A multi-lingual GUI for managing appointments with customers.
